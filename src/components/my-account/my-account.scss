@@ -1,0 +1,42 @@
+.user-list {
+  transition: all 0.4s ease-in;
+  padding: 50px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(186px, auto));
+  grid-template-rows: 180px;
+  justify-content: center;
+
+  .user-item {
+    transition: all 0.4s ease-in;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .name {
+      transition: all 0.4s ease-in;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 15px;
+      color: black;
+    }
+  }
+
+  .user-item:hover {
+    background-color: lightseagreen;
+    .name {
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
+
+.ripple-parent {
+  position: relative;
+  overflow: hidden;
+}
